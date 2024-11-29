@@ -16,15 +16,29 @@
 // }
 // console.log(res);
 
-let a = "tbc";
-let b = "cbt";
-let c = "";
-for (let i = a.length -1; i >= 0 ; i--) {
-    c += a[i]
+// let a = "tbc";
+// let b = "cbt";
+// let c = "";
+// for (let i = a.length -1; i >= 0 ; i--) {
+//     c += a[i]
+// }
+
+// if (c === b) {
+//     console.log('true');
+// } else {
+//     console.log('false');
+// }
+
+// 4-masala
+
+let a = 'abc193'
+let b = 0
+
+for (let i = 0; i < a.length; i++) {
+    let c = a[i]
+    if (c>= '0' && c<= '9') {
+        b += Number(c) 
+    }
 }
 
-if (c === b) {
-    console.log('true');
-} else {
-    console.log('false');
-}
+console.log(b);
