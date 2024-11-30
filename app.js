@@ -11,18 +11,18 @@
 // }
 // console.log(count);
 
-// let a = "level";
-// let c = "level";
-// for (let i = 0; i <a.length; i++) {
+// let a = "hello";
+// let c = "";
+// for (let i = a.length - 1; i >= 0; i--) {
 //   c += a[i];
 // }
 
-// console.log(a == c);
+// console.log(a==c);
 
 // let a = "salom dunyo";
 // let c = "";
 // let b = a.split(" ");
-// for (let i = b.length-1; i >= 0; i--) {
-//   c +=  " "+ b[i];
+// for (let i = b.length - 1; i >= 0; i--) {
+//   c += " " + b[i];
 // }
 // console.log(c);
