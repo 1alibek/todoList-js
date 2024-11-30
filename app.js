@@ -1,5 +1,3 @@
-
-
 // console.log(b);
 
 // let str = "WIaASWaaSSS";
@@ -21,3 +19,10 @@
 
 // console.log(a == c);
 
+// let a = "salom dunyo";
+// let c = "";
+// let b = a.split(" ");
+// for (let i = b.length-1; i >= 0; i--) {
+//   c +=  " "+ b[i];
+// }
+// console.log(c);
