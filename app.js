@@ -1,4 +1,3 @@
-// console.log(b);
 
 // let str = "WIaASWaaSSS";
 // res = "";
@@ -11,18 +10,32 @@
 // }
 // console.log(count);
 
-// let a = "hello";
-// let c = "";
-// for (let i = a.length - 1; i >= 0; i--) {
-//   c += a[i];
-// }
 
-// console.log(a==c);
 
-// let a = "salom dunyo";
-// let c = "";
-// let b = a.split(" ");
-// for (let i = b.length - 1; i >= 0; i--) {
-//   c += " " + b[i];
+
+// 1------------------------------------------------
+// let str = "javascriptamazing";
+// let start =2;
+// let end = 10;
+// let res = "";
+// for (let i = start; i < end; i++) {
+//    res+=str[i]
 // }
-// console.log(c);
+// console.log(res);
+
+// 2-----------------------------------------------
+// let str = " hel loworl dsalomdunyo ";
+// let str2 =str.trim()
+// res = [];
+// for (let i = 0; i < str2.length; i++) {
+//   if (str2[i]===" "){
+//     res.push(i)
+//   };
+// }
+// console.log(res);
+// 3----------------------------------------------------
+// let str = "JavaScript JavaScript dasturlash dasturlash tili tili";
+// let word = str.split(" ");
+// let del = new Set(word);
+// let res = Array.from(del).join(" ");
+// console.log(res);

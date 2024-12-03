@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NO Doors</title>
+    <title>Гермес</title>
     <link rel="stylesheet" href="../css/output.css" />
+    <link rel="icon" href="./svg/logo-icon.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -14,280 +15,645 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="bg-[#f6f7fb] py-2 max-[470px]:hidden">
-        <nav
-          class="flex items-center justify-between w-[90%] m-auto min-[1440px]:w-[1440px]"
-        >
-          <nav class="flex items-center gap-4">
-            <a href="#">О компании</a>
-            <a href="#">Доставка и оплата</a>
-            <a href="#">Гарантии</a>
-            <a href="#">Контакты</a>
-          </nav>
-          <nav class="flex items-center gap-4">
-            <a class="flex items-center gap-2 max-[650px]:hidden" href="#"
-              ><img src="./svg/phone.svg" alt="" />+7 (965) 237-44-49</a
-            >
-            <a class="flex items-center gap-2 max-[950px]:hidden" href="#"
-              >Русский <i class="fa-solid fa-chevron-down"></i
-            ></a>
-            <a class="max-[830px]:hidden" href="#">Личный кабинет</a>
-          </nav>
-        </nav>
-      </nav>
+    <header class="border-b-2">
       <nav
-        class="w-[90%] m-auto min-[1440px]:w-[1440px] flex items-center justify-between py-4 gap-6"
+        class="w-[95%] m-auto min-[1440px]:w-[1400px] flex items-center justify-between py-[21px]"
       >
-        <nav>
-          <a href="/">
-            <img src="./img/logo.png" alt="" />
-          </a>
+        <nav class="flex items-center gap-3">
+          <a href="/"
+            ><img
+              class="max-[650px]:w-[135px] max-[650px]:h-[35px]"
+              src="./img/germes_logo.png"
+              alt=""
+          /></a>
         </nav>
-        <nav class="w-[70%] max-[700px]:hidden">
-          <div
-            class="flex items-center justify-between border-2 border-[#399a3a] rounded-lg"
-          >
-            <input
-              class="pl-4 text-[#686868]"
-              type="text"
-              placeholder="Введите поисковой запрос.."
+        <nav class="burger max-[1050px]:w-0">
+          <input class="hidden" type="checkbox" id="check" />
+          <ul class="flex items-center gap-8 nav-ul">
+            <div class="flex items-center justify-between gap-4 w-full">
+              <img class="logo-img hidden" src="./img/germes_logo.png" alt="" />
+              <label class="label pr-12" for="check"
+                ><i class="fa-solid fa-x hidden"></i
+              ></label>
+            </div>
+            <li>
+              <a
+                class="font-medium text-ateg text-[18px] hidden max-[1050px]:block"
+                href="#"
+                >Акции</a
+              >
+            </li>
+            <li>
+              <a class="font-medium text-ateg text-[18px]" href="./persantage.html">Услуги</a>
+            </li>
+            <li>
+              <a class="font-medium text-ateg text-[18px]" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="font-medium text-ateg text-[18px]" href="#">Оплата</a>
+            </li>
+            <li>
+              <a class="font-medium text-ateg text-[18px]" href="#">Проекты</a>
+            </li>
+            <li>
+              <a
+                class="font-medium text-ateg text-[18px] hidden max-[1050px]:block"
+                href="#"
+                >О компании</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium text-ateg text-[18px] hidden max-[1050px]:block"
+                href="#"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="flex items-center gap-12 max-[1138px]:gap-6">
+          <div class="flex items-center gap-8 max-[380px]:hidden">
+            <img src="./svg/star.svg" alt="" />
+            <img src="./svg/basket.svg" alt="" />
+          </div>
+          <div>
+            <img
+              class="hidden max-[650px]:block"
+              src="./svg/phone.svg"
+              alt=""
             />
-            <button
-              class="text-white font-medium rounded-[4px] bg-[#399a3a] flex items-center gap-4 h-[40px] px-4"
+            <h1
+              class="text-[#272727] text-[24px] max-[1150px]:text-[20px] max-[650px]:hidden"
             >
-              <img src="./svg/search.svg" alt="" />Найти
-            </button>
+              8 (843) 203-93-43
+            </h1>
+            <p class="text-[#5661cb] max-[1157px]:hidden">
+              заказать обратный звонок
+            </p>
           </div>
-        </nav>
-        <nav class="flex items-center gap-6">
-          <div class="flex flex-col items-center">
-            <img src="./img/like.png" alt="" />
-            <p class="max-[370px]:hidden">Избранное</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <img src="./img/basket.png" alt="" />
-            <p class="max-[370px]:hidden">Kорзина</p>
-          </div>
+          <label class="label text-[#5661cb]" for="check"
+            ><i class="fa-solid fa-bars hidden text-[28px]"></i
+          ></label>
         </nav>
       </nav>
-      <nav
-        class="w-[90%] m-auto min-[1440px]:w-[1440px] flex items-center justify-between py-6 gap-6 max-[600px]:hidden"
-      >
-        <nav class="flex items-center gap-6 justify-between w-[80%]">
-          <a class="flex items-center gap-2 text-[16px] font-medium" href="#"
-            >Apple <i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <a class="flex items-center gap-2 text-[16px] font-medium" href="#"
-            >Huawei <i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <a class="flex items-center gap-2 text-[16px] font-medium" href="#"
-            >Xiaomi <i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <a class="flex items-center gap-2 text-[16px] font-medium" href="#"
-            >Samsung <i class="fa-solid fa-chevron-down"></i
-          ></a>
-          <a
-            class="flex items-center gap-2 text-[16px] font-medium max-[1000px]:hidden"
-            href="#"
-            >Питание и кабели</a
-          >
-          <a
-            class="flex items-center gap-2 text-[16px] font-medium max-[750px]:hidden"
-            href="#"
-            >Powerbank</a
-          >
-          <a
-            class="flex items-center gap-2 text-[16px] font-medium max-[750px]:hidden"
-            href="#"
-            >Акции</a
-          >
-        </nav>
-        <nav>
-          <a
-            class="flex items-center gap-2 text-[16px] font-medium text-[#399a3a]"
-            href="#"
-            >Прайс-лист</a
-          >
-        </nav>
-      </nav>
-      <hr />
     </header>
-    <section
-      class="w-[90%] m-auto min-[1440px]:w-[1440px] flex items-center justify-center mt-12"
-    >
-      <img src="./img/cards_main.png" alt="" />
+    <section class="w-[95%] m-auto min-[1440px]:w-[1400px]">
+      <div class="flex items-center justify-between py-4">
+        <div
+          class="flex items-center justify-between py-2 px-4 bg-[#5661cb] rounded-[4px] w-[20%] max-[750px]:w-[30%] max-[480px]:w-full"
+        >
+          <div class="flex items-center gap-4">
+            <img src="./svg/menu.svg" alt="" />
+            <h1 class="text-[18px] text-white">Каталог</h1>
+          </div>
+          <img
+            class="hidden max-[480px]:block"
+            src="./svg/search2.svg"
+            alt=""
+          />
+        </div>
+        <h1 class="font-medium text-[#d41a36] max-[1050px]:hidden">Акции</h1>
+        <div
+          class="border-2 rounded-lg py-2 px-4 flex items-center justify-between max-[480px]:hidden"
+        >
+          <input
+            class="pl-2"
+            type="text"
+            placeholder="Введите название товар"
+          />
+          <img class="pl-12" src="./svg/search.svg" alt="" />
+        </div>
+        <h1 class="font-medium text-[#494949] uppercase max-[1050px]:hidden">
+          о компании
+        </h1>
+        <h1 class="font-medium text-[#494949] uppercase max-[1050px]:hidden">
+          КОнтакты
+        </h1>
+        <button
+          class="py-2 px-4 bg-[#5661cb] rounded-[4px] text-[18px] text-white max-[673px]:hidden"
+        >
+          Оптовый заказ
+        </button>
+      </div>
+      <div class="flex items-center gap-6">
+        <div
+          class="w-[20%] rounded-[4px] katalog p-2 flex flex-col gap-3 max-[1050px]:hidden"
+        >
+          <h1 class="flex items-center justify-between">
+            Стеновые материалы <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Фасадные материалы
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Строительные блоки
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Отделочные материалы
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Сухие смеси
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Благоустройство
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Лако-красочные материалы
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between">
+            Прочие услуги
+            <i class="fa-solid fa-chevron-right"></i>
+          </h1>
+          <h1 class="flex items-center justify-between text-[#d41a36]">
+            Распродажа товаров
+            <i class="fa-solid fa-chevron-right text-black"></i>
+          </h1>
+        </div>
+        <div
+          class="showcase w-full h-auto py-12 rounded-xl pl-4 flex flex-col gap-4 max-[1050px]:items-center"
+        >
+          <h1
+            class="font-bold text-white text-[30px] pt-6 max-[1050px]:text-center max-[465px]:text-[22px]"
+          >
+            Лако-красочные материалы
+          </h1>
+          <p
+            class="text-white text-[20px] max-[1050px]:text-center max-[465px]:text-[16px]"
+          >
+            Скидки 30% на немецкую продукцию <br />
+            Alpina на нашем сайте
+          </p>
+          <button
+            class="py-2 px-4 border-2 border-[#fff] rounded-lg text-white mb-6 w-[fit-content]"
+          >
+            Перейти в каталог
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center justify-between flex-wrap gap-6 py-12">
+        <div class="flex items-center gap-2">
+          <img src="./img/Icon.png" alt="" />
+          <h1>
+            Доставка стройматериалов <br />
+            и аренда спецтехники
+          </h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./img/Icon (1).png" alt="" />
+          <h1>
+            Скидки застройщикам <br />
+            и оптовикам
+          </h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./img/Icon (2).png" alt="" />
+          <h1>
+            Предлагаем <br />
+            лучшую цену
+          </h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="./img/Icon (3).png" alt="" />
+          <h1>
+            Работаем 7 дней <br />
+            в неделю
+          </h1>
+        </div>
+      </div>
     </section>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-12">
-      <h1
-        class="text-[40px] font-bold text-black max-[1000px]:text-[30px] max-[600px]:text-[22px]"
-      >
-        Выберите бренд
-      </h1>
+    <section class="w-[95%] m-auto min-[1440px]:w-[1400px]">
+      <div class="flex items-center justify-between py-6">
+        <h1
+          class="font-medium text-[36px] max-[800px]:text-[26px] max-[500px]:text-[20px]"
+        >
+          Спецпредложения
+        </h1>
+        <p class="text-[#d41a36] font-medium text-[16px] max-[445px]:hidden">
+          Перейти в раздел скидок
+        </p>
+      </div>
       <div
-        class="grid grid-cols-4 gap-4 mt-12 max-[1183px]:grid-cols-3 max-[900px]:grid-cols-2 max-[565px]:grid-cols-1"
+        class="grid grid-cols-4 gap-4 max-[1090px]:grid-cols-3 max-[830px]:grid-cols-2 max-[540px]:grid-cols-1 max-[540px]:justify-center"
       >
-        <div>
-          <div
-            class="bg-[#f6f7fb] rounded-lg py-8 w-full flex justify-center px-4"
-          >
-            <img src="./img/card1.png" alt="" />
-          </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
           <div>
-            <p class="font-medium text-[22px] text-black text-center">Apple</p>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[fit-content] border-2 pt-4 rounded-md">
+          <div>
+            <div class="flex items-center justify-between pr-4">
+              <img src="./img/Component 2.png" alt="" />
+              <img src="./svg/start.svg" alt="" />
+            </div>
+            <img class="mt-4 m-auto" src="./img/1.png" alt="" />
+          </div>
+          <div class="p-2">
+            <h1 class="font-medium text-[16px] text-black">
+              Кирпич облицовочный M95 Воткинский
+            </h1>
+            <p>Кол-во на поддоне, шт. - 297 <br />Формат одинарный</p>
+            <h3 class="flex items-center justify-between underline">
+              бесплатная доставка <span class="text-[#219653]">в наличии</span>
+            </h3>
+            <h1 class="font-medium text-[20px]">
+              4 500 <span class="font-normal text-[10px]">P/ шт</span>
+            </h1>
+            <div class="flex items-center gap-4">
+              <button
+                class="text-white rounded-[4px] bg-[#5661cb] py-2 px-8 max-[1212px]:px-4"
+              >
+                Купить в 1 клик
+              </button>
+              <button
+                class="text-white rounded-[4px] border-2 border-[#5661cb] py-[5px] px-4"
+              >
+                <img src="./svg/basket.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-[95%] m-auto min-[1440px]:w-[1400px] mt-6">
+      <div class="flex items-center justify-between py-6">
+        <h1
+          class="font-medium text-[36px] max-[800px]:text-[26px] max-[500px]:text-[20px]"
+        >
+          Проекты из наших стройматериалов
+        </h1>
+        <p class="text-[#5661cb] font-medium text-[16px] max-[445px]:hidden">
+          Смотреть все проекты
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-6 flex-wrap">
+        <img src="./img/card1.png" alt="" />
+        <div
+          class="bg-[#5661cb] rounded-lg px-8 w-[30%] py-10 max-[1325px]:p-4 max-[1218px]:py-10 max-[1100px]:py-4 max-[685px]:w-[90%]"
+        >
+          <h1 class="text-white text-[22px] font-medium">Аэропорт Казань</h1>
+          <p class="text-white py-4 overflow-hidden">
+            Комплекс услуг по доставке товара на <br />
+             Ваш строительный объект. Комплекс <br />
+             услуг по доставке.
+          </p>
+          <button class="text-white rounded-md border-2 border-white py-2 px-4">
+            Перейти к объекту
+          </button>
+        </div>
+        <img src="./img/card2.png" alt="" />
+      </div>
+    </section>
+    <section class="w-[95%] m-auto min-[1440px]:w-[1400px] mt-6">
+      <div class="flex items-center justify-between py-6">
+        <h1
+          class="font-medium text-[36px] max-[800px]:text-[26px] max-[500px]:text-[20px]"
+        >
+          Дополнительные услуги
+        </h1>
+        <p class="text-[#5661cb] font-medium text-[16px] max-[445px]:hidden">
+          Наши услуги
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-3 gap-6 max-[1080px]:grid-cols-2 max-[640px]:grid-cols-1"
+      >
+        <div class="rounded-[19px] box p-8 max-[400px]:p-4">
+          <img src="./img/Icon (4).png" alt="" />
+          <h1 class="font-bold text-[17px] py-2">Доставка стройматериалов</h1>
+          <p>
+            Комплекс услуг по доставке товара <br />
+            на Ваш строительный объект
+          </p>
+        </div>
+        <div class="rounded-[19px] box p-8 max-[400px]:p-4">
+          <img src="./img/Icon (5).png" alt="" />
+          <h1 class="font-bold text-[17px] py-2">Кладка кирпича</h1>
+          <p>Кладка кирпича и блоков Pototherm</p>
+        </div>
+        <div class="rounded-[19px] box p-8 max-[400px]:p-4 bg-[#5661cb]">
+          <img src="./img/Icon (6).png" alt="" />
+          <h1 class="font-bold text-[17px] py-2 text-white">Шеф-монтаж</h1>
+          <p class="text-white">
+            Демонстрация секретов успешного строительства
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="w-[95%] m-auto min-[1440px]:w-[1400px] mt-6">
+      <div class="flex items-center justify-between py-6">
+        <h1
+          class="font-medium text-[36px] max-[800px]:text-[26px] max-[500px]:text-[20px]"
+        >
+          Наш шоурум
+        </h1>
+        <p class="text-[#5661cb] font-medium text-[16px] max-[445px]:hidden">
+          Перейти в контакты
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-3 gap-4 max-[850px]:grid-cols-2 max-[500px]:grid-cols-1"
+      >
+        <img class="w-full" src="./img/card3.png" alt="" />
+        <img class="w-full" src="./img/card4.png" alt="" />
+        <img class="w-full" src="./img/card5.png" alt="" />
+      </div>
+    </section>
+    <section
+      class="w-[95%] m-auto min-[1440px]:w-[1400px] mt-12 flex items-center justify-between"
+    >
+      <img class="max-[550px]:hidden" src="./img/item1.png" alt="" />
+      <img class="max-[550px]:hidden" src="./img/item2.png" alt="" />
+      <img class="max-[550px]:hidden" src="./img/item3.png" alt="" />
+      <img class="max-[766px]:hidden" src="./img/item4.png" alt="" />
+      <img class="max-[766px]:hidden" src="./img/item5.png" alt="" />
+    </section>
+    <footer class="bg-[#f7f7f7] py-6 mt-12">
+
+
+    <div class="w-[95%] m-auto min-[1440px]:w-[1400px] ">
+      <div class="flex items-start flex-wrap gap-4 justify-between border-b-2 py-4">
+        <div>
+          <h3 class="font-medium text-[24px] pb-2">Организация</h3>
+          <p>О компании</p>
+          <p>Услуги</p>
+          <p>Статьи</p>
+          <p>Вакансии</p>
+        </div>
+        <div>
+          <h3 class="font-medium text-[24px] pb-2">Как купить</h3>
+          <p>Доставка</p>
+          <p>Оплата</p>
+          <p>Проекты</p>
+          <p>Контакты</p>
+        </div>
+        <div>
+          <h3 class="font-medium text-[24px] pb-2">Мы на связи</h3>
+          <div class="pl-6">
+            <p>8 (843) 203-93-43</p>
+            <p>info@td-germes.ru</p>
+            <div class="flex items-center gap-2">
+              <img src="./svg/watsap.svg" alt="" />
+              <img src="./svg/telegram.svg" alt="" />
+            </div>
           </div>
         </div>
         <div>
-          <div
-            class="bg-[#f6f7fb] rounded-lg py-8 w-full flex justify-center px-4"
-          >
-            <img src="./img/card2.png" alt="" />
-          </div>
-          <div>
-            <p class="font-medium text-[22px] text-black text-center">Huawei</p>
-          </div>
-        </div>
-        <div>
-          <div
-            class="bg-[#f6f7fb] rounded-lg py-8 w-full flex justify-center px-4"
-          >
-            <img src="./img/card3.png" alt="" />
-          </div>
-          <div>
-            <p class="font-medium text-[22px] text-black text-center">Xiaomi</p>
-          </div>
-        </div>
-        <div>
-          <div
-            class="bg-[#f6f7fb] rounded-lg py-8 w-full flex justify-center px-4"
-          >
-            <img src="./img/card2.png" alt="" />
-          </div>
-          <div>
-            <p class="font-medium text-[22px] text-black text-center">
-              Samsung
+          <h3 class="font-medium text-[24px] pb-2">Наш адрес</h3>
+          <div class="pl-6">
+            <p>Казань</p>
+            <p>ул.Сары Садыковой 30, 2 этаж</p>
+            <p>
+              Пн - Пт c 8:30 до 17:30 <br />
+              Суббота с 9:00 до 14:00
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-12">
-      <div
-        class="grid grid-cols-5 gap-4 mt-12 max-[1183px]:grid-cols-4 max-[950px]:grid-cols-3 max-[765px]:grid-cols-2 max-[500px]:grid-cols-1"
-      >
-        <div
-          class="bg-[#f6f7fb] rounded-lg py-8 w-full flex flex-col items-center gap-2 px-4"
-        >
-          <img src="./svg/icon1.svg" alt="" />
-          <p class="font-medium text-[22px] text-black text-center">
-            Достойные <br />
-            оптовые цены
-          </p>
-        </div>
-        <div
-          class="bg-[#f6f7fb] rounded-lg py-8 w-full flex flex-col items-center gap-2 px-4"
-        >
-          <img src="./svg/icon1.svg" alt="" />
-          <p class="font-medium text-[22px] text-black text-center">
-            Даём гарантию <br />
-            от 1 года
-          </p>
-        </div>
-        <div
-          class="bg-[#f6f7fb] rounded-lg py-8 w-full flex flex-col items-center gap-2 px-4"
-        >
-          <img src="./svg/icon1.svg" alt="" />
-          <p class="font-medium text-[22px] text-black text-center">
-            Работаем напрямую <br />
-            с производителями
-          </p>
-        </div>
-        <div
-          class="bg-[#f6f7fb] rounded-lg py-8 w-full flex flex-col items-center gap-2 px-4"
-        >
-          <img src="./svg/icon1.svg" alt="" />
-          <p class="font-medium text-[22px] text-black text-center">
-            Контроль качества <br />
-            продукции
-          </p>
-        </div>
-        <div
-          class="bg-[#f6f7fb] rounded-lg py-8 w-full flex flex-col items-center gap-2 px-4"
-        >
-          <img src="./svg/icon1.svg" alt="" />
-          <p class="font-medium text-[22px] text-black text-center">
-            Процент брака <br />
-            сведён к минимуму
-          </p>
-        </div>
+      <div class="flex items-center justify-between py-4">
+        <p>© 2012 — 2020, ООО «ТК «Гермес»<br>
+Сайт www.td-germes.ru носит исключительно информационный характер и ни при каких <br> условиях не является публичной офертой. 
+
+</p>
+<div class="flex items-center gap-4 max-[800px]:hidden">
+  <img src="./svg/visa.svg" alt="">
+  <img src="./svg/master.svg" alt="">
+</div>
       </div>
-    </section>
-    <section class="bg-[#F9F9F9] py-12 mt-12">
-      <div class="w-[90%] m-auto min-[1440px]:w-[1440px]">
-        <h1 class="font-medium text-[22px] text-black max-[600px]:text-[18px]">
-          No Doors Technology - продажа аксессуаров и запчастей для мобильных
-          телефонов оптом
-        </h1>
-        <br />
-        <p>
-          Товарищи! постоянное информационно-пропагандистское обеспечение нашей
-          деятельности представляет собой интересный эксперимент проверки
-          существенных финансовых и административных условий. С другой стороны
-          укрепление и развитие структуры требуют от нас анализа новых
-          предложений. Таким образом рамки и место обучения кадров позволяет
-          оценить значение системы обучения кадров, соответствует насущным
-          потребностям. <br /><br />
-          Товарищи! дальнейшее развитие различных форм деятельности играет
-          важную роль в формировании системы обучения кадров, соответствует
-          насущным потребностям. Задача организации, в особенности же постоянный
-          количественный рост и сфера нашей активности влечет за собой процесс
-          внедрения и модернизации позиций, занимаемых участниками в отношении
-          поставленных задач. Задача организации, в особенности же начало
-          повседневной работы по формированию позиции в значительной степени
-          обуславливает создание дальнейших направлений.
-        </p>
-      </div>
-    </section>
-    <section
-      class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12 flex items-center justify-center"
-    >
-      <img src="./img/ftr.png" alt="" />
-    </section>
-    <footer class="bg-[#1e1e1e]">
-      <div class="w-[90%] m-auto min-[1440px]:w-[1440px] py-6 flex flex-wrap gap-10 items-start justify-between">
-        <div>
-          <img src="./svg/logo.svg" alt="" />
-        </div>
-        <div class="flex flex-col gap-2">
-          <h1 class="text-white font-semibold text-[18px]">Навигация</h1>
-          <p class="text-white">О компании</p>
-          <p class="text-white">Доставка и оплата</p>
-          <p class="text-white">Гарантии</p>
-          <p class="text-white">Контакты</p>
-        </div>
-        <div class="flex flex-col gap-2">
-          <h1 class="text-white font-semibold text-[18px]">Контакты</h1>
-          <p class="flex items-center gap-2 text-white">
-            <img src="./svg/phone2.svg" alt="" />+7 (965) 237-44-49
-          </p>
-          <p class="flex items-center gap-2 text-white">
-            <img src="./svg/wk.svg" alt="" />vk.com/*long_link*
-          </p>
-          <p class="flex items-center gap-2 text-white">
-            <img src="./svg/ins.svg" alt="" />@*long_nickname*
-          </p>
-        </div>
-        <div>
-          <img src="./img/payment.png" alt="" />
-        </div>
-        <div class="flex flex-col gap-2">
-          <h1 class="text-white font-semibold text-[18px]">РАЗРАБОТКА САЙТА</h1>
-          <img class="w-[109px] h-[38px]" src="./img/logo2.svg" alt="" />
-          <p class="text-white">Политика конфиденциальности</p>
-          <p class="text-[#686868]">No Doors Technology © 2020</p>
-        </div>
-      </div>
-    </footer>
+    </div>
+        </footer>
     <script src="./app.js"></script>
   </body>
 </html>
