@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpina Market</title>
+    <title>Avto</title>
     <link rel="stylesheet" href="../css/output.css" />
     <link rel="icon" href="./svg/logo-icon.svg" />
     <link
@@ -15,424 +15,521 @@
     />
   </head>
   <body>
-    <header>
-      <div class="border-b-2">
-        <div class="w-[90%] m-auto min-[1440px]:w-[1440px]">
-          <div class="flex items-center justify-between h-12">
-            <div class="relative">
-              <button
-                class="flex items-center space-x-1 text-sm hover:text-purple-200"
-              >
-                <span>Санкт-Петербург</span>
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="{2}"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <nav>
-              <ul class="flex space-x-6 text-sm max-[580px]:hidden">
-                <li>
-                  <a href="#" class="hover:text-purple-200"> О нас </a>
-                </li>
-                <li>
-                  <a href="#" class="hover:text-purple-200"> Наши салоны </a>
-                </li>
-                <li>
-                  <a href="#" class="hover:text-purple-200">
-                    Оплата и доставка
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="hover:text-purple-200"> Для бизнеса </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div
-        class="w-[90%] m-auto min-[1440px]:w-[1440px] flex items-center justify-between gap-6 py-4"
-      >
-        <div class="flex items-center gap-6 w-[80%]">
-          <img src="./img/logo (1) 6.png" alt="" />
-          <div
-            class="flex items-center justify-between px-4 rounded-md bg-[#f6f6f6] py-2 w-[80%] max-[550px]:hidden"
+    <header class="w-[90%] m-auto min-[1440px]:w-[1440px]">
+      <nav class="header gap-6 py-2">
+        <nav class="flex items-center gap-4">
+          <img src="./img/logo.png" alt="" />
+          <button
+            class="flex items-center gap-2 text-[18px] py-[12px] px-6 rounded-md bg-[#f56e1e] max-[1300px]:hidden"
           >
-            <input class="bg-[#f6f6f6]" type="text" placeholder="Белый стул" />
+            <img src="./svg/menu.svg" alt="" />
+            <p class="text-white text-[18px] font-semibold">Каталог</p>
+          </button>
+        </nav>
+        <nav class="max-[930px]:hidden flex items-center justify-center">
+          <nav
+            class="flex items-center justify-between w-full px-2 py-[12px] border-2 border-[#a0a3bc] rounded-lg"
+          >
+            <input class="" type="text" placeholder="Я ищу" />
             <img src="./svg/search.svg" alt="" />
+          </nav>
+        </nav>
+        <nav class="flex items-end gap-4 max-[500px]:hidden">
+          <div class="flex flex-col items-center">
+            <img src="./svg/basket.svg" alt="" />
+            <p class="text-center">Корзина</p>
           </div>
-          <h1 class="text-[16px] text-black max-[750px]:hidden">
-            8 800 700 40 24 <br />
-            <span class="text-center">Позвонить или написать</span>
-          </h1>
-        </div>
-        <div class="flex items-center gap-4">
-          <img class="max-[350px]:hidden" src="./svg/profil.svg" alt="" />
-          <img class="max-[350px]:hidden" src="./svg/commet.svg" alt="" />
-          <img src="./svg/like.svg" alt="" />
-          <img src="./svg/basket.svg" alt="" />
-        </div>
-      </div>
+          <div class="flex flex-col items-center">
+            <img src="./svg/shop.svg" alt="" />
+            <p class="text-center">Избранное</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./svg/profil.svg" alt="" />
+            <p class="text-center">Профиль</p>
+          </div>
+        </nav>
+      </nav>
+      <nav
+        class="flex items-center justify-between gap-6 py-2 max-[730px]:hidden"
+      >
+        <button
+          class="bg-[#f1f1f1] py-2 px-4 rounded-full font-bold text-[9px] text-gray-500 max-[1150px]:hidden"
+        >
+          Динамично. Надежно. Доступно.
+        </button>
+        <img src="./img/lang.png" alt="" />
+        <nav class="flex items-center gap-6">
+          <a class="text-[#6e7191] text-[14px]" href="#">О компании</a>
+          <a class="text-[#6e7191] text-[14px]" href="#">Клиентам</a>
+          <a class="text-[#6e7191] text-[14px]" href="#">Сотрудничество</a>
+          <a class="text-[#6e7191] text-[14px]" href="#">Контакты</a>
+        </nav>
+        <nav class="flex items-center gap-6">
+          <img src="./img/social network btn (1).png" alt="" />
+          <p class="text-[#f56e1e] font-bold text-[18px] max-[930px]:hidden">
+            8 (800) 455-45-11
+          </p>
+          <button
+            class="flex items-center gap-2 py-[5px] px-4 rounded-md bg-[#f56e1e]"
+          >
+            <img src="./svg/phone.svg" alt="" />
+            <p class="text-white text-[18px] font-medium max-[1300px]:hidden">
+              Заказть звонок
+            </p>
+          </button>
+        </nav>
+      </nav>
     </header>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px]">
-      <div class="flex items-center gap-4">
-        <p>Каталог</p>
-        <p class="max-[350px]:hidden">Каталог по комнатам</p>
-        <p class="max-[550px]:hidden">Дизайн-проекты</p>
-        <p class="max-[650px]:hidden">Мебель на заказ</p>
-      </div>
-      <div class="flex items-center justify-center mt-8">
-        <img src="./img/image 3099.png" alt="" />
+      <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <img src="./img/Rectangle 312.png" alt="" />
+    </section>
+    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <h1 class="font-bold text-[32px] text-[#4e4b66] max-[450px]:text-[20px]">
+        Популярные категории
+      </h1>
+      <div
+        class="flex flex-wrap mt-8 gap-4 items-center justify-between max-[462px]:justify-center"
+      >
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[200px] h-[200px] justify-center gap-2"
+        >
+          <img src="./svg/box1.svg" alt="" />
+          <p class="text-[#4e4b66] text-[18px] text-center font-bold">
+            Стартеры <br />
+            и комплектующие
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[200px] h-[200px] justify-center gap-2"
+        >
+          <img src="./svg/box2.svg" alt="" />
+          <p class="text-[#4e4b66] text-[18px] text-center font-bold">
+            Термостаты
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[200px] h-[200px] justify-center gap-2"
+        >
+          <img src="./svg/box3.svg" alt="" />
+          <p class="text-[#4e4b66] text-[18px] text-center font-bold">
+            Датчики <br />
+            и комбинации <br />
+            приборов <br />
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[200px] h-[200px] justify-center gap-2"
+        >
+          <img src="./svg/box4.svg" alt="" />
+          <p class="text-[#4e4b66] text-[18px] text-center font-bold">
+            Генераторы
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[200px] h-[200px] justify-center gap-2"
+        >
+          <img src="./svg/box5.svg" alt="" />
+          <p class="text-[#4e4b66] text-[18px] text-center font-bold">
+            СВЕТОТЕХНИКА
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[200px] h-[200px] justify-center gap-2"
+        >
+          <img src="./svg/box6.svg" alt="" />
+          <p class="text-[#4e4b66] text-[18px] text-center font-bold">
+            Электродвигатели <br />
+             отопителя
+          </p>
+        </div>
       </div>
     </section>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-8">
-      <div class="flex items-center justify-between py-4">
-        <h1 class="text-[20px]">Каталог по комнатам</h1>
-        <h1 class="text-[20px] max-[400px]:hidden">Все комнаты</h1>
-      </div>
+    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <h1 class="font-bold text-[32px] text-[#4e4b66] max-[450px]:text-[20px]">
+        Новости
+      </h1>
       <div
-        class="grid grid-cols-3 gap-4 max-[800px]:grid-cols-2 max-[550px]:grid-cols-1"
+        class="flex flex-wrap mt-8 gap-4 items-center justify-between max-[1018px]:justify-center"
       >
         <div>
-          <img src="./img/Frame 1104.png" alt="" />
-          <p class="text-[16px] text-black">Ванная</p>
+          <img src="./img/card1.png" alt="" />
+          <p
+            class="text-[28px] font-bold text-[#4e4b66] pb-6 max-[500px]:text-[20px]"
+          >
+            Заголовок в две строчки <br />
+            или в три строчки
+          </p>
+          <p>28.09.2022</p>
         </div>
         <div>
-          <img src="./img/Frame 1102.png" alt="" />
-          <p class="text-[16px] text-black">Прихожая</p>
+          <img src="./img/card1.png" alt="" />
+          <p
+            class="text-[28px] font-bold text-[#4e4b66] pb-6 max-[500px]:text-[20px]"
+          >
+            Заголовок в две строчки <br />
+            или в три строчки
+          </p>
+          <p>28.09.2022</p>
         </div>
         <div>
-          <img src="./img/Frame 1103.png" alt="" />
-          <p class="text-[16px] text-black">Кухня</p>
+          <img src="./img/card1.png" alt="" />
+          <p
+            class="text-[28px] font-bold text-[#4e4b66] pb-6 max-[500px]:text-[20px]"
+          >
+            Заголовок в две строчки <br />
+            или в три строчки
+          </p>
+          <p>28.09.2022</p>
         </div>
       </div>
     </section>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-8">
-      <div class="flex items-center justify-between py-4">
-        <h1 class="text-[20px]">Популярные категории</h1>
-        <h1 class="text-[20px] max-[400px]:hidden">Все категории</h1>
+    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <img src="./img/Banner.png" alt="" />
+    </section>
+    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <h1 class="font-bold text-[32px] text-[#4e4b66] max-[450px]:text-[20px]">
+        Автозапчасти к технике
+      </h1>
+      <div
+        class="flex flex-wrap mt-8 gap-4 items-center justify-between max-[462px]:justify-center"
+      >
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[180px] h-[200px] relative"
+        >
+          <img class="relative" src="./img/car.png" alt="" />
+          <p
+            class="text-[#4e4b66] text-[18px] text-center font-bold absolute bottom-4"
+          >
+            Грузовые
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[180px] h-[200px] relative"
+        >
+          <img class="relative" src="./img/car.png" alt="" />
+          <p
+            class="text-[#4e4b66] text-[18px] text-center font-bold absolute bottom-4"
+          >
+            Трактора
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[180px] h-[200px] relative"
+        >
+          <img class="relative" src="./img/car.png" alt="" />
+          <p
+            class="text-[#4e4b66] text-[18px] text-center font-bold absolute bottom-4"
+          >
+            Легковые
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[180px] h-[200px] relative"
+        >
+          <img class="relative" src="./img/car.png" alt="" />
+          <p
+            class="text-[#4e4b66] text-[18px] text-center font-bold absolute bottom-4"
+          >
+            Сельхозтехника
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[180px] h-[200px] relative"
+        >
+          <img class="relative" src="./img/car.png" alt="" />
+          <p
+            class="text-[#4e4b66] text-[18px] text-center font-bold absolute bottom-4"
+          >
+            Автобусы
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center bg-[#f1f1f1] rounded-xl w-[180px] h-[200px] relative"
+        >
+          <img class="relative" src="./img/car.png" alt="" />
+          <p
+            class="text-[#4e4b66] text-[18px] text-center font-bold absolute bottom-4"
+          >
+            Спецтехника
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <h1 class="font-bold text-[32px] text-[#4e4b66] max-[450px]:text-[20px]">
+        Хиты продаж
+      </h1>
+      <div
+        class="flex flex-wrap items-center justify-between gap-4 max-[485px]:justify-center"
+      >
+        <div class="flex flex-col w-[fit-content] gap-2">
+          <img class="w-[fit-content]" src="./img/cards.png" alt="" />
+          <h1 class="font-bold text-[26px] text-black">
+            999999 ₽ <sup class="text-[#a0a3bd] font-medium">999999 ₽</sup>
+          </h1>
+          <p>
+            Фара светодиодная <br />
+            дополнительная круглая, <br />
+            направленный свет, 14 <br />
+            диодов, 42W, (115х42х142)
+          </p>
+          <p>
+            Кат. номер: <br />
+            <span class="font-medium text-black">AE42R-14LED-42HC</span>
+          </p>
+          <button
+            class="flex items-center w-full gap-2 bg-[#f56e1e] py-2 px-6 rounded-lg text-white text-[16px] font-semibold"
+          >
+            <img src="./svg/like.svg" alt="" />В корзину
+          </button>
+        </div>
+        <div class="flex flex-col w-[fit-content] gap-2">
+          <img class="w-[fit-content]" src="./img/cards.png" alt="" />
+          <h1 class="font-bold text-[26px] text-black">
+            999999 ₽ <sup class="text-[#a0a3bd] font-medium">999999 ₽</sup>
+          </h1>
+          <p>
+            Фара светодиодная <br />
+            дополнительная круглая, <br />
+            направленный свет, 14 <br />
+            диодов, 42W, (115х42х142)
+          </p>
+          <p>
+            Кат. номер: <br />
+            <span class="font-medium text-black">AE42R-14LED-42HC</span>
+          </p>
+          <button
+            class="flex items-center w-full gap-2 bg-[#f56e1e] py-2 px-6 rounded-lg text-white text-[16px] font-semibold"
+          >
+            <img src="./svg/like.svg" alt="" />В корзину
+          </button>
+        </div>
+        <div class="flex flex-col w-[fit-content] gap-2">
+          <img class="w-[fit-content]" src="./img/cards.png" alt="" />
+          <h1 class="font-bold text-[26px] text-black">
+            999999 ₽ <sup class="text-[#a0a3bd] font-medium">999999 ₽</sup>
+          </h1>
+          <p>
+            Фара светодиодная <br />
+            дополнительная круглая, <br />
+            направленный свет, 14 <br />
+            диодов, 42W, (115х42х142)
+          </p>
+          <p>
+            Кат. номер: <br />
+            <span class="font-medium text-black">AE42R-14LED-42HC</span>
+          </p>
+          <button
+            class="flex items-center w-full gap-2 bg-[#f56e1e] py-2 px-6 rounded-lg text-white text-[16px] font-semibold"
+          >
+            <img src="./svg/like.svg" alt="" />В корзину
+          </button>
+        </div>
+        <div class="flex flex-col w-[fit-content] gap-2">
+          <img class="w-[fit-content]" src="./img/cards.png" alt="" />
+          <h1 class="font-bold text-[26px] text-black">
+            999999 ₽ <sup class="text-[#a0a3bd] font-medium">999999 ₽</sup>
+          </h1>
+          <p>
+            Фара светодиодная <br />
+            дополнительная круглая, <br />
+            направленный свет, 14 <br />
+            диодов, 42W, (115х42х142)
+          </p>
+          <p>
+            Кат. номер: <br />
+            <span class="font-medium text-black">AE42R-14LED-42HC</span>
+          </p>
+          <button
+            class="flex items-center w-full gap-2 bg-[#f56e1e] py-2 px-6 rounded-lg text-white text-[16px] font-semibold"
+          >
+            <img src="./svg/like.svg" alt="" />В корзину
+          </button>
+        </div>
+        <div class="flex flex-col w-[fit-content] gap-2">
+          <img class="w-[fit-content]" src="./img/cards.png" alt="" />
+          <h1 class="font-bold text-[26px] text-black">
+            999999 ₽ <sup class="text-[#a0a3bd] font-medium">999999 ₽</sup>
+          </h1>
+          <p>
+            Фара светодиодная <br />
+            дополнительная круглая, <br />
+            направленный свет, 14 <br />
+            диодов, 42W, (115х42х142)
+          </p>
+          <p>
+            Кат. номер: <br />
+            <span class="font-medium text-black">AE42R-14LED-42HC</span>
+          </p>
+          <button
+            class="flex items-center w-full gap-2 bg-[#f56e1e] py-2 px-6 rounded-lg text-white text-[16px] font-semibold"
+          >
+            <img src="./svg/like.svg" alt="" />В корзину
+          </button>
+        </div>
+        <div class="flex flex-col w-[fit-content] gap-2">
+          <img class="w-[fit-content]" src="./img/cards.png" alt="" />
+          <h1 class="font-bold text-[26px] text-black">
+            999999 ₽ <sup class="text-[#a0a3bd] font-medium">999999 ₽</sup>
+          </h1>
+          <p>
+            Фара светодиодная <br />
+            дополнительная круглая, <br />
+            направленный свет, 14 <br />
+            диодов, 42W, (115х42х142)
+          </p>
+          <p>
+            Кат. номер: <br />
+            <span class="font-medium text-black">AE42R-14LED-42HC</span>
+          </p>
+          <button
+            class="flex items-center w-full gap-2 bg-[#f56e1e] py-2 px-6 rounded-lg text-white text-[16px] font-semibold"
+          >
+            <img src="./svg/like.svg" alt="" />В корзину
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12">
+      <img src="./img/Banner.png" alt="" />
+    </section>
+    <section
+      class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12 flex items-center justify-between flex-wrap gap-6 max-[905px]:justify-center"
+    >
+      <div
+        class="flex items-center gap-6 border-2 rounded-xl p-4 max-[443px]:flex-col"
+      >
+        <img src="./svg/item1.svg" alt="" />
+        <div>
+          <h1
+            class="font-bold text-[28px] text-[#f56e1e] max-[443px]:text-center"
+          >
+            Динамично
+          </h1>
+          <p>
+            Мы предлагаем более 15000 <br class="max-[443px]:hidden" />
+            наименований запчастей на все <br class="max-[443px]:hidden" />
+            виды автотранспортных средств, <br class="max-[443px]:hidden" />
+            тракторную и сельхозтехнику,<br class="max-[443px]:hidden" />
+            спецтехнику.
+          </p>
+        </div>
       </div>
       <div
-        class="grid grid-cols-6 gap-4 max-[1000px]:grid-cols-3 max-[600px]:grid-cols-2 max-[400px]:grid-cols-1"
+        class="flex items-center gap-6 border-2 rounded-xl p-4 max-[443px]:flex-col"
       >
+        <img src="./svg/item2.svg" alt="" />
         <div>
-          <div class="flex items-center justify-center p-8 bg-[#f6f6f6]">
-            <img src="./img/Rectangle 836.png" alt="" />
-          </div>
-          <p class="text-center">Кресла</p>
+          <h1
+            class="font-bold text-[28px] text-[#f56e1e] max-[443px]:text-center"
+          >
+            Надежно
+          </h1>
+          <p>
+            Мы предлагаем более 15000 <br class="max-[443px]:hidden" />
+            наименований запчастей на все <br class="max-[443px]:hidden" />
+            виды автотранспортных средств, <br class="max-[443px]:hidden" />
+            тракторную и сельхозтехнику,<br class="max-[443px]:hidden" />
+            спецтехнику.
+          </p>
         </div>
+      </div>
+      <div
+        class="flex items-center gap-6 border-2 rounded-xl p-4 max-[443px]:flex-col"
+      >
+        <img src="./svg/item3.svg" alt="" />
         <div>
-          <div class="flex items-center justify-center p-8 bg-[#f6f6f6]">
-            <img src="./img/Rectangle 837.png" alt="" />
-          </div>
-          <p class="text-center">Столы</p>
-        </div>
-        <div>
-          <div class="flex items-center justify-center p-8 bg-[#f6f6f6]">
-            <img src="./img/Rectangle 836.png" alt="" />
-          </div>
-          <p class="text-center">Декор</p>
-        </div>
-        <div>
-          <div class="flex items-center justify-center p-8 bg-[#f6f6f6]">
-            <img src="./img/Rectangle 837.png" alt="" />
-          </div>
-          <p class="text-center">Стулья</p>
-        </div>
-        <div>
-          <div class="flex items-center justify-center p-8 bg-[#f6f6f6]">
-            <img src="./img/Rectangle 836.png" alt="" />
-          </div>
-          <p class="text-center">Стулья</p>
-        </div>
-        <div>
-          <div class="flex items-center justify-center p-8 bg-[#f6f6f6]">
-            <img src="./img/Rectangle 837.png" alt="" />
-          </div>
-          <p class="text-center">Стулья</p>
+          <h1
+            class="font-bold text-[28px] text-[#f56e1e] max-[443px]:text-center"
+          >
+            Доступно
+          </h1>
+          <p>
+            Мы предлагаем более 15000 <br class="max-[443px]:hidden" />
+            наименований запчастей на все <br class="max-[443px]:hidden" />
+            виды автотранспортных средств, <br class="max-[443px]:hidden" />
+            тракторную и сельхозтехнику,<br class="max-[443px]:hidden" />
+            спецтехнику.
+          </p>
         </div>
       </div>
     </section>
     <section
-      class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-8 bg-[#f6f6f6] p-4 flex items-center justify-between max-[400px]:flex-col"
+      class="w-[90%] m-auto min-[1440px]:w-[1440px] p-6 bg-[#fde9de] rounded-2xl"
     >
-      <h1 class="text-24px">Информационный блок про работу с бизнесом</h1>
-      <button class="py-2 px-4 border-2 border-black">Узнать подробнее</button>
-    </section>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-8">
-      <div class="flex items-center justify-between py-4">
-        <h1 class="text-[20px]">Лучшее предложение</h1>
-        <h1 class="text-[20px] max-[400px]:hidden">Все предложения</h1>
-      </div>
-      <div
-        class="grid grid-cols-4 gap-4 max-[1250px]:grid-cols-3 max-[950px]:grid-cols-2 max-[650px]:grid-cols-1"
-      >
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="w-[fit-content] flex flex-col items-center">
-          <img src="./img/IMG.png" alt="" />
-          <div class="w-[fit-content]">
-            <div class="flex justify-between">
-              <p>
-                Декоративный куст, с <br />
-                шикарными листьями,<br />
-                горшком
-              </p>
-              <p>2 000 руб.</p>
-            </div>
-            <div class="flex items-center justify-between">
-              <img src="./img/Variant.png" alt="" />
-              <img src="./svg/shop.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-12">
-      <div class="flex items-center justify-between py-4">
-        <h1 class="text-[20px]">Готовые коллекции</h1>
-        <h1 class="text-[20px] max-[400px]:hidden">Все комнаты</h1>
-      </div>
-      <div
-        class="grid grid-cols-3 gap-4 max-[800px]:grid-cols-2 max-[550px]:grid-cols-1"
-      >
-        <div>
-          <img src="./img/Frame 1104.png" alt="" />
-          <p class="text-[16px] text-black">Ванная</p>
-        </div>
-        <div>
-          <img src="./img/Frame 1102.png" alt="" />
-          <p class="text-[16px] text-black">Прихожая</p>
-        </div>
-        <div>
-          <img src="./img/Frame 1103.png" alt="" />
-          <p class="text-[16px] text-black">Кухня</p>
-        </div>
-      </div>
-      <div
-        class="flex gap-8 justify-center max-[900px]:flex-col max-[900px]:items-center max-[900px]:w-full"
-      >
-        <div
-          class="flex flex-col justify-between p-8 bg-[#f6f6f6] w-[50%] max-[900px]:w-full max-[400px]:p-2"
+      <h1 class="text-[#6e7191] font-semibold text-[22px]">
+        Выберите категорию рассылки
+      </h1>
+      <div class="flex items-center justify-between gap-4 py-4 flex-wrap">
+        <p class="text-[#f56e1e] flex items-center gap-2">
+          <img src="./svg/check.svg" alt="" />Электронная версия <br />
+          каталога продукции
+        </p>
+        <p class="text-gray-500 flex items-center gap-2">
+          <img src="./svg/check.svg" alt="" />Прайс-лист <br />
+          с актуальными ценами
+        </p>
+        <p class="text-[#f56e1e] flex items-center gap-2">
+          <img src="./svg/check.svg" alt="" />Информация <br />
+          о новинках и акциях
+        </p>
+        <input
+          class="py-2 pl-2 rounded-lg"
+          type="text"
+          placeholder="Введите Ваш e-mail"
+        />
+        <button
+          class="py-2 px-4 text-white font-medium rounded-lg bg-[#f56e1e]"
         >
-          <h1 class="text-[34px] text-[#079294] max-[600px]:text-[24px]">
-            Раздел для десигна <br class="max-[400px]:hidden" />
-            о дисигн проектах<br class="max-[400px]:hidden" />
-            и дисигнераз
-          </h1>
-          <p>
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-            <br class="max-[600px]:hidden" />
-            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-            <br class="max-[600px]:hidden" />
-            текстов на латинице с начала XVI века.
-          </p>
-        </div>
-        <div
-          class="flex flex-wrap gap-4 w-[50%] max-[900px]:w-full max-[900px]:justify-center"
-        >
-          <div class="bg-[#f6f6f6] p-8">
-            <img class="w-[120px] h-[120px]" src="./img/card.png" alt="" />
-            <p class="text-center">Конструктор</p>
-          </div>
-          <div class="bg-[#f6f6f6] p-8">
-            <img class="w-[120px] h-[120px]" src="./img/card.png" alt="" />
-            <p class="text-center">Конструктор</p>
-          </div>
-          <div class="bg-[#f6f6f6] p-8">
-            <img class="w-[120px] h-[120px]" src="./img/card.png" alt="" />
-            <p class="text-center">Конструктор</p>
-          </div>
-          <div class="bg-[#f6f6f6] p-8">
-            <img class="w-[120px] h-[120px]" src="./img/card.png" alt="" />
-            <p class="text-center">Конструктор</p>
-          </div>
-          <div class="bg-[#f6f6f6] p-8">
-            <img class="w-[120px] h-[120px]" src="./img/card.png" alt="" />
-            <p class="text-center">Конструктор</p>
-          </div>
-        </div>
+          Подписаться
+        </button>
       </div>
+      <p>
+        Нажимая «Подписаться», вы соглашаетесь с политикой конфиденциальности
+      </p>
     </section>
-    <footer class="w-[90%] m-auto min-[1440px]:w-[1440px] mt-12">
-      <hr />
-      <div class="flex flex-wrap justify-between py-8 gap-6">
-        <div class="flex flex-col gap-2">
-          <h1 class="font-medium">Каталог</h1>
-          <p>Акции</p>
-          <p>Мебель</p>
-          <p>Список комнат</p>
-          <p>Товары для дома</p>
-          <p>Фурнитура и комплектующие</p>
-          <p>Плитка, керамогранит и мозаика</p>
-        </div>
-        <div class="flex flex-col gap-2">
-          <h1 class="font-medium">Покупателю</h1>
-          <p>Мебель на заказ</p>
-          <p>Дизайн-проекты</p>
-          <p>Наши салоны</p>
-          <p>Оплата и доставка</p>
-          <p>О нас</p>
-          <p>Для бизнеса</p>
-        </div>
-        <div class="flex flex-col gap-2">
-          <h1 class="font-medium">Контакты</h1>
-          <p>
-            Единая справочная:br
-            <span>8 800 700 40 24</span> <br />
-            Звонок по России бесплатный. <br />
+    <footer class="bg-[#f1f1f1] mt-12">
+      <div  class="w-[90%] m-auto min-[1440px]:w-[1440px] py-12 flex items-start flex-wrap justify-between gap-6">
+        <div>
+          <img src="./svg/logo.svg" alt="" />
+          <p class="text-[#6e7191]">
+            Оптовая продажа запчастей <br />
+            на все виды автотранспортных <br />
+            средств <br />
             <br />
-            Режим работы: с 02:00 до 23:00 (МСК).
+            ИП Хомченко Максим Альбертович <br />
+            ОГРНИП 000000000
           </p>
-          <p>Присоединяйтесь к нам в социальных сетях</p>
-          <img class="w-[80px] h-[32px]" src="./img/Frame 1126.png" alt="" />
         </div>
         <div class="flex flex-col gap-2">
-          <h1 class="font-medium">Мы принимаем к оплате</h1>
-          <img src="./img/image 35.png" alt="" />
-          <br /><br />
-          <p>Нам важно ваше мнение</p>
-          <br />
-          <button class="py-2 px-4 border-2 border-black">Написать нам</button>
+          <h1 class="text-[#6e7191] font-bold">О компании</h1>
+          <p class="text-[#6e7191]">Документы и реквизиты</p>
+          <p class="text-[#6e7191]">Бренды</p>
+          <p class="text-[#6e7191]">Сотрудники</p>
+          <p class="text-[#6e7191]">Контакты</p>
+          <p class="text-[#6e7191]">Карьера</p>
         </div>
-        <hr />
-      </div>
-      <hr />
-      <div class="flex items-center justify-between gap-4 py-6 max-[850px]:flex-col">
-        <div class="flex items-center gap-10 max-[620px]:flex-col">
-          <p>© 2020 Rendement. All rights reserved</p>
-          <p>Политика конфиденциальности</p>
+          <div class="flex flex-col gap-2">
+          <h1 class="text-[#6e7191] font-bold">Клиентам</h1>
+          <p class="text-[#6e7191]">Новости</p>
+          <p class="text-[#6e7191]">Как зарегестрироваться</p>
+          <p class="text-[#6e7191]">Как сделать заказ</p>
+          <p class="text-[#6e7191]">Способы оплаты</p>
+          <p class="text-[#6e7191]">Гарантии возврата </p>
+          <p class="text-[#6e7191]">Вопросы и ответы </p>
+          <p class="text-[#6e7191]">Доставка и склад </p>
         </div>
-        <p>Developed by Legacystudio</p>
+        <div class="flex flex-col gap-2">
+          <img class="w-[fit-content]" src="./img/social network btn (1).png" alt="">
+          <p  class="text-[#6e7191] underline">Ссылка на форму обратной связи со <br> службой контроля качества</p>
+          <p class="text-[#6e7191]">Время работы <br>
+<span class="font-bold">пн. - пт. с 7:30 до 18:00</span></p>
+   <p class="text-[#6e7191]">Телефоны: <br>
+<span class="font-bold"> 8 (800) 455-55-15 <br>
++7 (495) 108-54-64</span></p>
+   <p class="text-[#6e7191]">Адрес эл. почты <br>
+<span class="font-bold">info@auto-e.ru</span></p>
+        </div>
       </div>
     </footer>
   </body>
