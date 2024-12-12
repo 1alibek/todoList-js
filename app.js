@@ -1,4 +1,3 @@
-
 // 1-----------------------------------------------------------------
 // function regaxphone(tel) {
 //     const regaxtel = /^\(?\d{3}\)?[- ]?\d{3}-\d{4}$/;
@@ -37,3 +36,15 @@
 // console.log(regaxtxt("AD5412353"));
 
 
+
+
+// xonada bergan masala
+function stars(num) {
+  for (let i = 1; i <= num; i++) {
+    let res = " ".repeat(num - i);
+    let res2 = "*".repeat(i * 2 - 1);
+    console.log(res + res2);
+  }
+}
+
+stars(5);
