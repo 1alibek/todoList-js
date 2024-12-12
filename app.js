@@ -1,7 +1,3 @@
-// let regexTel = /^[+](998)(\d\d)(\d\d\d)(\d\d)(\d\d)/gm;
-// let tel  = "+998888588284"
-// console.log(tel.replace(regexTel, "+$1 ($2) $3-$4-$5"));
-
 
 // 1-----------------------------------------------------------------
 // function regaxphone(tel) {
@@ -28,11 +24,16 @@
 // }
 // console.log(regaxtxt("AhvfeiZ"));
 // 5-------------------------------------------------------------------------------
+//  function regaxtxt(url) {
+//     let regaxtext = /<\/?[a-zA-Z][^>]*>/
+//   return regaxtext.test(url);
+// }
+// console.log(regaxtxt("<h1>"));
 // 6-------------------------------------------------------
- function regaxtxt(url) {
-    let regaxtext = /^([A-Z]{2})(\d{7})/;
-  return regaxtext.test(url);
-}
-console.log(regaxtxt("AD5412353"));
+//  function regaxtxt(url) {
+//     let regaxtext = /^([A-Z]{2})(\d{7})/;
+//   return regaxtext.test(url);
+// }
+// console.log(regaxtxt("AD5412353"));
 
 
