@@ -1,13 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.header{
-display: grid;
-grid-template-columns: 2fr 4fr 1fr;
+.btn{
+  box-shadow: 0 7px 50px 0 rgba(0, 0, 0, 0.15);
+background: #fff;
 }
-@media(max-width:930px){
-  .header{
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-between;
+.gridsh{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+@media(max-width:850px){
+  .gridsh{
+    grid-template-columns: 1fr;
   }
 }
