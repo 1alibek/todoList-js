@@ -10,9 +10,19 @@ background: #fff;
   grid-template-columns: 10% 87%;
   align-items: center;
 }
+.gridBoxs{
+  display: grid;
+  grid-template-columns: 0.8fr 4fr;
+ gap: 20px;
+}
 @media(max-width:880px){
   .gridBox{
     grid-template-columns: 50% 50%;
     justify-content: space-between;
+  }
+}
+@media(max-width:1000px){
+  .gridBoxs{
+    grid-template-columns: 100%;
   }
 }
