@@ -5,12 +5,14 @@
   box-shadow: 0 7px 50px 0 rgba(0, 0, 0, 0.15);
 background: #fff;
 }
-.gridsh{
+.gridBox{
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 10% 87%;
+  align-items: center;
 }
-@media(max-width:850px){
-  .gridsh{
-    grid-template-columns: 1fr;
+@media(max-width:880px){
+  .gridBox{
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
   }
 }
