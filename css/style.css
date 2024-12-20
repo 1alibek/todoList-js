@@ -1,52 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+    margin: 0;
+    background: #219C90;
+}
+#formDiv {
+    width: 550px;
+    height: auto;
+    margin: 70px auto;
+    padding: 50px;
+    background: #ffffffdb;
+    border-radius: 15px;
+}
+#formDiv h1 {
+    text-align: center;
+    font-size: 28px;
+    font-family: sans-serif;
+    color: #000;
+    margin-bottom: 35px;
+}
+#formDiv form {
+    text-align: center;
 }
 
-.items{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
+#todoText {
+    width: 80%;
+    height: 40px;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 10px;
+    vertical-align: middle;
 }
-.error{
-  color: red;
-  display: none;
+#todoText:focus-visible {
+    outline: none;
 }
-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#todoAdd {
+    width: 12%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #8b5ec6;
+    vertical-align: middle;
 }
-#name,#surname,#age{
-  width: 400px;
-  padding: 10px 0;
-  border-radius: 10px; margin: 10px 0;
+#formDiv ul {
+    list-style: none;
+    padding: 0;
 }
-.btn {
-  background-color: rgb(231, 53, 53);
-  color: white;
-
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  width: 100px;
-  margin: 0 auto;
+#formDiv li {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 4px 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    width: 93%;
+    display: inline-block;
+    vertical-align: middle;
 }
-
-.list_item {
-  margin: 0 auto;
-padding: 5px;
-border-radius: 10px;
-  gap: 20px;
-  margin-top: 20px;
-  background-color: aqua;
-  width: 500px;
-  margin-top: 10px;
+.delete-botton {
+    width: 12%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #dc3545;
+    vertical-align: middle;
+    float: right;
 }
-
+.done-botton {
+    width: 12%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #28a745;
+    vertical-align: middle;
+    float: right;
+    margin-right: 5px;
+}
+.edit-botton {
+    width: 12%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ebd316;
+    vertical-align: middle;
+    float: right;
+    margin-right: 5px;
+}
+#todoUl form {
+    text-align: left;
+}
+#todoUl input {
+    border: none;
+    border-bottom: 1px solid;
+    float: left;
+    width: 58%;
+    font-size: 18px;
+}
+#todoUl input:focus-visible{
+    outline: none;
+}
