@@ -1,28 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.btn{
-  box-shadow: 0 7px 50px 0 rgba(0, 0, 0, 0.15);
-background: #fff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.gridBox{
-  display: grid;
-  grid-template-columns: 10% 87%;
+
+.items{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.error{
+  color: red;
+  display: none;
+}
+body{
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.gridBoxs{
-  display: grid;
-  grid-template-columns: 0.8fr 4fr;
- gap: 20px;
+#name,#surname,#age{
+  width: 400px;
+  padding: 10px 0;
+  border-radius: 10px; margin: 10px 0;
 }
-@media(max-width:880px){
-  .gridBox{
-    grid-template-columns: 50% 50%;
-    justify-content: space-between;
-  }
+.btn {
+  background-color: rgb(231, 53, 53);
+  color: white;
+
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 100px;
+  margin: 0 auto;
 }
-@media(max-width:1000px){
-  .gridBoxs{
-    grid-template-columns: 100%;
-  }
+
+.list_item {
+  margin: 0 auto;
+padding: 5px;
+border-radius: 10px;
+  gap: 20px;
+  margin-top: 20px;
+  background-color: aqua;
+  width: 500px;
+  margin-top: 10px;
 }
+

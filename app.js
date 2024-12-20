@@ -1,62 +1,62 @@
-class Transport {
-  constructor(name, speed, capacity) {
-    this.name = name; 
-    this.speed = speed; 
-    this.capacity = capacity; 
-  }
+const form = document.getElementById("form");
+const text = document.getElementById("text");
+const lists = document.querySelector(".lists");
+let data = [];
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  // const div = document.createElement("div");
+  // div.classList.add("list_item");
+  // if (text.value === " ") {
+  //   text.style.borderColor = "red";
+  // } else {
+  //   div.innerHTML = `
+  //   <span>${text.value}</span>
+  //   <i class"fa-solid fa-pen"></i>`;
+  //   lists.append(div);
+  // }
+  // text.value = "";
+  let name = form.name.value;
+  let surname = form.surname.value;
+  let age = form.age.value;
 
-  start() {
-    console.log(`${this.name} harakatga tushdi.`);
+  validateValue(name, surname, age);
+  if (name.trim() && surname.trim() && age.trim()) {
+    data = [...data, { name, surname, age, id: Date.now() }];
+    AddTodo(data);
   }
+});
 
-  stop() {
-    console.log(`${this.name} to'xtadi.`);
-  }
+function AddTodo(data) {
+  lists.innerHTML = "";
+  data.forEach((value) => {
+    const div = document.createElement("div");
+    div.classList.add("list_item");
+    div.innerHTML = `
+  <span>name:${value.name}</span>
+  <span>surname:${value.surname}</span>
+  <span>age:${value.age}</span>
+  <button id=${value.id} class="btn2">delete</button>`;
+    lists.append(div);
+  });
 }
-class Car extends Transport {
-  constructor(name, speed, capacity, fuelType) {
-    super(name, speed, capacity);
-    this.fuelType = fuelType; 
-  }
 
-  driveMode(mode) {
-    console.log(`${this.name} ${mode} rejimida harakatlanmoqda.`);
-  }
+function validateValue(name, surname, age) {
+  name.trim() === ""
+    ? (document.querySelector(".eror1").style.display = "block")
+    : (document.querySelector(".eror1").style.display = "none");
+  surname.trim() === ""
+    ? (document.querySelector(".eror2").style.display = "block")
+    : (document.querySelector(".eror2").style.display = "none");
+  age.trim() === ""
+    ? (document.querySelector(".eror3").style.display = "block")
+    : (document.querySelector(".eror3").style.display = "none");
 }
-class Airplane extends Transport {
-  constructor(name, speed, capacity, altitude) {
-    super(name, speed, capacity);
-    this.altitude = altitude; 
+lists.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn2")) {
+    deletetodo(e.target.id);
   }
-
-  fly() {
-    console.log(
-      `${this.name} ${this.altitude} metr balandlikda parvoz boshladi.`
-    );
-  }
+});
+function deletetodo(id) {
+  data = data.filter((value) => value.id !== +id);
+  AddTodo(data);
 }
-
-class Ship extends Transport {
-  constructor(name, speed, capacity, cargoCapacity) {
-    super(name, speed, capacity);
-    this.cargoCapacity = cargoCapacity; 
-  }
-
-  sail() {
-    console.log(
-      `${this.name} ${this.cargoCapacity} tonna yuk bilan suzishni boshladi.`
-    );
-  }
-}
-const myCar = new Car("BMW M5 CS", 350, 5, "elektr");
-myCar.start();
-myCar.driveMode("sport+");
-myCar.stop();
-const myPlane = new Airplane("Boeing 747", 900, 400, 10000);
-myPlane.start();
-myPlane.fly();
-myPlane.stop();
-const myShip = new Ship("Titanic", 40, 3000, 50000);
-myShip.start();
-myShip.sail();
-myShip.stop();
